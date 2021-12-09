@@ -476,8 +476,9 @@
       <div class="nav-icon-container">
         
         <a href="./">
+
           
-          
+        
           <img src="./img/LOGO2-1.jpg" alt="" class="nav-logo transparent" />
         </a>
       </div>
