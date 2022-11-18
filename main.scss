@@ -77,7 +77,7 @@ h5 {
 p {
   //line-height: 3rem;
   letter-spacing: 0.1rem;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   //padding: 3rem 0;
   font-weight: 300;
   line-height: 2.5rem;
@@ -105,6 +105,72 @@ p {
 
 .reveal-menu {
   transform: translateY(0) !important;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+.bold-link {
+  font-weight: bold;
+}
+
+.pack-items {
+  font-weight: 400;
+  text-transform: none;
+}
+
+.no-transform {
+  text-transform: none;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  // background-color: green;
+}
+
+.special {
+  text-align: center;
+  display: flex;
+  max-height: 600px;
+  li {
+    text-decoration: none;
+    list-style: none;
+  }
+  &-container {
+    padding: 0 8rem;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+  &-title {
+    margin: 0;
+    padding: 0;
+    font-size: 5rem;
+  }
+  &-image {
+    flex: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-text {
+    flex: 1;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    // padding: 0 2rem;
+  }
+  &-alt {
+    flex-direction: row-reverse;
+  }
 }
 
 .nav {
@@ -188,11 +254,12 @@ p {
   &-overlay {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.42),
-      rgba(0, 0, 0, 0.077)
-    );
+    // background-image: linear-gradient(
+    //   to right,
+    //   rgba(0, 0, 0, 0.42),
+    //   rgba(0, 0, 0, 0.077)
+    // );
+    background: radial-gradient(rgba(0, 0, 0, 0.112), rgba(0, 0, 0, 0.38));
     //background-color: rgba(0, 0, 0, 0.262);
     z-index: 2;
     position: absolute;
@@ -295,7 +362,8 @@ p {
     color: $backgroundColor;
     //min-height: 100vh;
     // background-image: url(./jason/img/pexels-ivan-torres-1374651.jpg);
-    background-image: url(./img/pexels-shantanu-pal-2802527.jpg);
+    // background-image: url(./img/pexels-shantanu-pal-2802527.jpg);
+    background-image: url(./img/Image3.jpg);
     background-position: center center;
     background-size: cover;
     position: relative;
@@ -331,7 +399,7 @@ p {
         position: relative;
 
         img {
-          width: auto;
+          width: 100%;
           height: 100%;
           object-fit: cover;
           transition: all ease 7s;
@@ -483,6 +551,11 @@ p {
   text-align: left;
 }
 
+.padding9 {
+  padding: 0 9rem;
+  text-shadow: 1px 1px 2px black;
+}
+
 .mailing {
   display: flex;
   padding: 4rem;
@@ -493,7 +566,7 @@ p {
     flex: 1;
   }
   &-text {
-    text-align: center;
+    text-align: end;
   }
   &-form {
     display: flex;
@@ -512,12 +585,35 @@ p {
   }
 }
 
+@media only screen and (max-width: 550px) {
+  .footer-links {
+    h5 {
+      font-size: 1rem;
+    }
+  }
+}
+
 .footer {
   display: flex;
-  padding: 3rem 7rem;
+  // padding: 3rem 7rem;
   background-color: $mainColor-darker;
   color: $tertiaryColor;
-  min-height: 40vh;
+  min-height: 30vh;
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  &-links {
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+    padding: 0 2rem;
+    padding-bottom: 4rem;
+    h5 {
+      font-family: "Roboto Slab", serif;
+      flex: 1;
+    }
+  }
   &-item {
     flex: 1;
     p {
@@ -538,17 +634,18 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(
-    to bottom right,
-    rgb(53, 40, 35),
-    rgb(60, 35, 25)
-  );
+  // background-image: linear-gradient(
+  //   to bottom right,
+  //   rgb(53, 40, 35),
+  //   rgb(60, 35, 25)
+  // );
+  background: radial-gradient(rgb(80, 44, 29), rgb(41, 27, 27));
   padding: 2rem;
   color: #fffdfd;
   text-align: center;
   &-picture {
-    width: 10vw;
-    height: 10vw;
+    width: 200px;
+    height: 200px;
     margin: auto;
     overflow: hidden;
     border-radius: 100%;
@@ -556,7 +653,7 @@ p {
     box-shadow: 3px 3px 6px #000;
     img {
       width: 100%;
-      transform: scale(1.3) translateY(-20px);
+      transform: scale(1) translateY(-70px);
     }
   }
   &-description {
@@ -570,6 +667,7 @@ p {
   height: 150px;
   margin: auto;
   max-width: 100%;
+  // padding-right: 2rem;
 }
 
 .mailing-btn {
@@ -585,7 +683,8 @@ p {
 }
 
 .button-overlay1,
-.button-overlay2 {
+.button-overlay2,
+.button-overlay3 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -602,7 +701,7 @@ p {
 
 .button-overlay {
   &-info {
-    margin: 2rem;
+    // margin: 2rem;
     color: $tertiaryColor;
     padding: 2rem;
   }
@@ -623,6 +722,7 @@ p {
 
 .other-font {
   font-family: "Roboto Slab", serif;
+  // font-family: "Montserrat", serif;
 }
 
 .instagram-icon {
@@ -732,17 +832,18 @@ p {
     flex-direction: column;
     flex: 2;
     margin: 3rem;
-    height: 73vh;
+    // height: 73vh;
   }
   &-description {
     padding: 3rem 0;
   }
   &-nutritional {
     //flex: 1;
-    overflow: scroll;
+    // overflow: scroll;
+    height: 100%;
     img {
       // width: 100%;
-      height: 79vh;
+      height: 100%;
     }
   }
   &-picture {
@@ -757,10 +858,10 @@ p {
       width: 100%;
       display: block;
       // overflow: hidden;
-      //height: 100%;
+      height: 100%;
       object-fit: cover;
       object-position: center center;
-      transform: translateY(-10%);
+      // transform: translateY(-10%);
     }
   }
   &-overlay {
@@ -776,15 +877,15 @@ p {
   }
 }
 
-.modal3 {
-  top: 20%;
-  text-align: center;
-  max-width: 900px;
-}
+// .modal3 {
+//   top: 20%;
+//   text-align: center;
+//   max-width: 900px;
+// }
 
-.modal-info3 {
-  height: auto;
-}
+// .modal-info3 {
+//   height: auto;
+// }
 
 .receive {
   padding: 0 7rem;
@@ -872,7 +973,45 @@ p {
   display: none;
 }
 
+.external {
+  background-color: #ac3c1b;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  &-item {
+    text-align: center;
+
+    flex: 1;
+    &:first-child {
+      border-right: 1px solid grey;
+    }
+    &_name {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
 @media only screen and (max-width: 550px) {
+  .special {
+    flex-direction: column-reverse;
+    max-height: 2000px;
+    h3 {
+      font-size: 2rem;
+    }
+    &-text {
+      padding: 2rem 0;
+    }
+    &-container {
+      padding: 0 1.5rem;
+    }
+    &-title {
+      font-size: 4rem;
+    }
+  }
   .modal3 {
     top: 10%;
   }
@@ -927,15 +1066,16 @@ p {
   .textbox-container {
     width: auto;
   }
-  .bio-picture {
-    width: 40vw;
-    height: 40vw;
-  }
+  // .bio-picture {
+  //   width: 40vw;
+  //   height: 40vw;
+  // }
   .bio-description {
     width: 95%;
   }
   .mailing {
     flex-direction: column;
+    padding-top: 2rem;
   }
   .footer {
     flex-direction: column;
@@ -959,13 +1099,34 @@ p {
     margin: auto;
   }
   .mailing-text {
-    margin: 2rem;
+    margin: 2rem 0;
+    text-align: start;
+  }
+  .padding9 {
+    padding: 0;
+    text-shadow: 1px 1px 2px black;
   }
   .welcome-box {
     width: 100%;
   }
   .welcome {
     text-align: left;
+  }
+  .mailing-form input {
+    width: 100%;
+  }
+  .external {
+    flex-direction: column;
+    padding: 1rem;
+    &-item {
+      border-right: none !important;
+
+      padding: 1.5rem;
+      // margin-bottom: 1.5rem;
+      &:first-child {
+        border-bottom: 2px grey solid !important;
+      }
+    }
   }
   .receive-box {
     flex-direction: column;
@@ -1028,4 +1189,46 @@ p {
   justify-content: center;
   align-items: center;
   z-index: 99;
+}
+
+.new-window {
+  color: white;
+
+  filter: invert(98%) sepia(5%) saturate(6%) hue-rotate(351deg) brightness(102%)
+    contrast(100%);
+  height: 1.5rem;
+  margin-bottom: -1px;
+}
+
+.policy-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: auto;
+  gap: 1rem;
+  padding: 2rem;
+  margin-bottom: 5rem;
+  &-highlight {
+    font-weight: bold;
+    font-style: italic;
+  }
+  a {
+    // color: rgb(119, 0, 255);
+    font-weight: 500;
+  }
+  h5,
+  p {
+    font-family: "roboto slab", serif;
+  }
+  h5 {
+    margin-top: 2rem;
+    font-size: 2rem;
+  }
+  h2 {
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 3rem;
+    text-decoration: underline;
+    // border-bottom: 2px solid black;
+  }
 }

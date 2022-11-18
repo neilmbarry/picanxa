@@ -22,6 +22,7 @@ sauceImages.forEach((el) => {
 
 const sauceImage1 = document.querySelector(".bottle-img1");
 const sauceImage2 = document.querySelector(".bottle-img2");
+const sauceImage3 = document.querySelector(".bottle-img3");
 
 sauceImage1.addEventListener("mouseover", (e) => {
   document.querySelector(".button-overlay1").classList.add("show");
@@ -43,6 +44,16 @@ sauceImage2.addEventListener("mouseover", (e) => {
 sauceImage2.addEventListener("mouseleave", (e) => {
   document.querySelector(".button-overlay2").classList.remove("show");
   document.querySelector(".bottle2").classList.remove("scale");
+});
+
+sauceImage3.addEventListener("mouseover", (e) => {
+  document.querySelector(".button-overlay3").classList.add("show");
+  document.querySelector(".bottle3").classList.add("scale");
+});
+
+sauceImage3.addEventListener("mouseleave", (e) => {
+  document.querySelector(".button-overlay3").classList.remove("show");
+  document.querySelector(".bottle3").classList.remove("scale");
 });
 
 const navIcon = document.querySelector(".nav-burger");
@@ -117,6 +128,11 @@ openModal2.addEventListener("click", () => {
   modal2.classList.toggle("modal-close2");
 });
 
+openModal3.addEventListener("click", () => {
+  toggleOverlay();
+  modal3.classList.toggle("modal-close3");
+});
+
 // openModal3.addEventListener("click", () => {
 //   toggleOverlay();
 //   modal3.classList.toggle("modal-close3");
@@ -179,7 +195,7 @@ const shopifyBtn = document.querySelector(".shopify-buy__btn");
 //   modal3.classList.toggle("modal-close3");
 // });
 
-setTimeout(() => {
-  toggleOverlay();
-  modal3.classList.toggle("modal-close3");
-}, 1000);
+// setTimeout(() => {
+//   toggleOverlay();
+//   modal3.classList.toggle("modal-close3");
+// }, 1000);
