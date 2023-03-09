@@ -762,16 +762,16 @@
       <div class="special-container">
 
      
-      <h2 class="special-title">Holiday Gift Pack</h2>
+      <h2 class="special-title">Picanxa Trio</h2>
      
-      <h4 class="other-font">The perfect holiday gift for your favourite foodie and hot sauce lover!!!</h4>
-      <h3 class="other-font">Gift Pack contains:</h3>
+      <h4 class="other-font">The perfect gift pack for your favourite foodie and hot sauce lover!!!</h4>
+      <h3 class="other-font">Includes:</h3>
       <ul class="other-font pack-items">
-        <li><h5 class="pack-items"><span class="other-font">1x 8oz</span> Picanxa Mirepoix</h5></li>
-        <li><h5 class="pack-items"><span class="other-font">1x 8oz</span> Picanxa Dijon</h5></li>
-        <li><h5 class="pack-items"><span class="other-font">1x 8oz</span> Picanxa Raspberry Gastrique</h5></li>
-        <li><h5 class="pack-items"><span class="other-font">1x</span> Message Card</h5></li>
-        <li><h5 class="pack-items"><span class="other-font">1x</span> Plaid Gift Bag</h5></li>
+        <li><h5 class="pack-items"> Picanxa Mirepoix<span class="other-font"> 8oz</span></h5></li>
+        <li><h5 class="pack-items"> Picanxa Dijon<span class="other-font"> 8oz</span></h5></li>
+        <li><h5 class="pack-items"> Picanxa Raspberry Gastrique<span class="other-font"> 8oz</span></h5></li>
+        <!-- <li><h5 class="pack-items"><span class="other-font">1x</span> Message Card</h5></li>
+        <li><h5 class="pack-items"><span class="other-font">1x</span> Plaid Gift Bag</h5></li> -->
       </ul>
       <h4 class="other-font"><span class="strike">$44.85 CAD</span> $39.99 CAD</h4>
       <div class="button-container">
@@ -964,7 +964,7 @@
     </div>
     </div>
   </section>
-  <section class="special">
+  <!-- <section class="special">
     <div class="special-image">
       <img src="/img-optimized/CARD.jpg" alt="">
     </div>
@@ -1166,7 +1166,7 @@
       </script>
       </div>
     </div>
-  </section>
+  </section> -->
   <section class="section section-about">
     <div ></div>
     <h2 class="about-title">Our Signature Sauces</h2>
