@@ -95,8 +95,7 @@ p {
 
 .special {
   text-align: center;
-  display: flex;
-  max-height: 600px; }
+  display: flex; }
   .special li {
     text-decoration: none;
     list-style: none; }
@@ -271,6 +270,7 @@ p {
 
 .about-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
   max-width: 1200px;
@@ -279,7 +279,6 @@ p {
   .about-container-price {
     padding: 1rem; }
   .about-container-item {
-    flex: 1;
     margin: 0 1rem;
     overflow: hidden;
     position: relative; }
@@ -499,7 +498,8 @@ p {
 
 .button-overlay1,
 .button-overlay2,
-.button-overlay3 {
+.button-overlay3,
+.button-overlay4 {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -573,6 +573,7 @@ p {
 .modal1,
 .modal2,
 .modal3,
+.modal4,
 .modal {
   position: fixed;
   z-index: 99999;
@@ -584,20 +585,28 @@ p {
   left: 5%;
   right: 5%;
   margin: auto; }
-  .modal1-close1, .modal1-close3, .modal1-close2,
+  .modal1-close1, .modal1-close3, .modal1-close4, .modal1-close2,
   .modal2-close1,
   .modal2-close3,
+  .modal2-close4,
   .modal2-close2,
   .modal3-close1,
   .modal3-close3,
+  .modal3-close4,
   .modal3-close2,
+  .modal4-close1,
+  .modal4-close3,
+  .modal4-close4,
+  .modal4-close2,
   .modal-close1,
   .modal-close3,
+  .modal-close4,
   .modal-close2 {
     transform: translateY(-180%); }
   .modal1-close-btn,
   .modal2-close-btn,
   .modal3-close-btn,
+  .modal4-close-btn,
   .modal-close-btn {
     position: absolute;
     top: 0;
@@ -607,6 +616,7 @@ p {
   .modal1-content,
   .modal2-content,
   .modal3-content,
+  .modal4-content,
   .modal-content {
     display: flex;
     align-items: flex-start;
@@ -617,11 +627,13 @@ p {
     .modal1-content-3,
     .modal2-content-3,
     .modal3-content-3,
+    .modal4-content-3,
     .modal-content-3 {
       height: auto; }
   .modal1-info,
   .modal2-info,
   .modal3-info,
+  .modal4-info,
   .modal-info {
     display: flex;
     flex-direction: column;
@@ -630,21 +642,25 @@ p {
   .modal1-description,
   .modal2-description,
   .modal3-description,
+  .modal4-description,
   .modal-description {
     padding: 3rem 0; }
   .modal1-nutritional,
   .modal2-nutritional,
   .modal3-nutritional,
+  .modal4-nutritional,
   .modal-nutritional {
     height: 100%; }
     .modal1-nutritional img,
     .modal2-nutritional img,
     .modal3-nutritional img,
+    .modal4-nutritional img,
     .modal-nutritional img {
       height: 100%; }
   .modal1-picture,
   .modal2-picture,
   .modal3-picture,
+  .modal4-picture,
   .modal-picture {
     flex: 2;
     overflow: hidden;
@@ -653,6 +669,7 @@ p {
     .modal1-picture img,
     .modal2-picture img,
     .modal3-picture img,
+    .modal4-picture img,
     .modal-picture img {
       width: 100%;
       display: block;
@@ -662,6 +679,7 @@ p {
   .modal1-overlay,
   .modal2-overlay,
   .modal3-overlay,
+  .modal4-overlay,
   .modal-overlay {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.495);
@@ -671,6 +689,7 @@ p {
   .modal1-hide,
   .modal2-hide,
   .modal3-hide,
+  .modal4-hide,
   .modal-hide {
     z-index: -3;
     opacity: 0; }

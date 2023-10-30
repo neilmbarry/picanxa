@@ -23,6 +23,7 @@ sauceImages.forEach((el) => {
 const sauceImage1 = document.querySelector(".bottle-img1");
 const sauceImage2 = document.querySelector(".bottle-img2");
 const sauceImage3 = document.querySelector(".bottle-img3");
+const sauceImage4 = document.querySelector(".bottle-img4");
 
 sauceImage1.addEventListener("mouseover", (e) => {
   document.querySelector(".button-overlay1").classList.add("show");
@@ -54,6 +55,15 @@ sauceImage3.addEventListener("mouseover", (e) => {
 sauceImage3.addEventListener("mouseleave", (e) => {
   document.querySelector(".button-overlay3").classList.remove("show");
   document.querySelector(".bottle3").classList.remove("scale");
+});
+sauceImage4.addEventListener("mouseover", (e) => {
+  document.querySelector(".button-overlay4").classList.add("show");
+  document.querySelector(".bottle4").classList.add("scale");
+});
+
+sauceImage4.addEventListener("mouseleave", (e) => {
+  document.querySelector(".button-overlay4").classList.remove("show");
+  document.querySelector(".bottle4").classList.remove("scale");
 });
 
 const navIcon = document.querySelector(".nav-burger");
@@ -89,15 +99,20 @@ modalOverlay.addEventListener("click", () => {
   if (!modal3.classList.contains("modal-close3")) {
     modal3.classList.add("modal-close3");
   }
+  if (!modal4.classList.contains("modal-close4")) {
+    modal4.classList.add("modal-close4");
+  }
 });
 
 const modalCloseBtns = document.querySelectorAll(".modal-close-btn");
 const modal1 = document.querySelector(".modal1");
 const modal2 = document.querySelector(".modal2");
 const modal3 = document.querySelector(".modal3");
+const modal4 = document.querySelector(".modal4");
 const openModal1 = document.querySelector(".open-modal1");
 const openModal2 = document.querySelector(".open-modal2");
 const openModal3 = document.querySelector(".open-modal3");
+const openModal4 = document.querySelector(".open-modal4");
 
 modalCloseBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
@@ -110,6 +125,9 @@ modalCloseBtns.forEach((btn) => {
     }
     if (!modal3.classList.contains("modal-close3")) {
       modal3.classList.add("modal-close3");
+    }
+    if (!modal4.classList.contains("modal-close4")) {
+      modal4.classList.add("modal-close4");
     }
   });
 });
@@ -131,6 +149,10 @@ openModal2.addEventListener("click", () => {
 openModal3.addEventListener("click", () => {
   toggleOverlay();
   modal3.classList.toggle("modal-close3");
+});
+openModal4.addEventListener("click", () => {
+  toggleOverlay();
+  modal4.classList.toggle("modal-close4");
 });
 
 // openModal3.addEventListener("click", () => {
