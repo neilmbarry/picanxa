@@ -11,6 +11,12 @@
 
 // testy();
 
+const closeShippingBtn = document.querySelector(".shipping-close");
+const shippingBanner = document.querySelector(".shipping-banner");
+closeShippingBtn.addEventListener("click", () => {
+  shippingBanner.classList.add("item-hide");
+});
+
 const sauceImages = document.querySelectorAll(".bottle-img");
 
 sauceImages.forEach((el) => {
